@@ -1,0 +1,14 @@
+development:
+  database: cittadella_dev
+  host: localhost
+  port: 27017
+  pool: 5
+  timeout: 5000
+
+test:
+  database: cittadella_test
+  host: localhost
+  port: 27017
+  pool: 5
+  timeout: 5000
+

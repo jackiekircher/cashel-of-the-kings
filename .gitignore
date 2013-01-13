@@ -1,0 +1,15 @@
+# Ignore bundler config
+.bundle
+
+# Ignore all logfiles and tempfiles.
+log/*.log
+tmp
+
+# Ignore configuration files
+config/database.yml
+
+# Ignore rspec files
+.rspec
+
+# Ignore any security details
+config/initializers/secret_token.rb
