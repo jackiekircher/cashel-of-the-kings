@@ -6,4 +6,5 @@ gem 'mongo_mapper', '~> 0.12.0'
 
 group :test, :development do
   gem 'rspec-rails', '~> 2.0'
+  gem 'debugger'
 end
