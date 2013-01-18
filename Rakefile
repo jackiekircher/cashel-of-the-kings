@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Cittadella::Application.load_tasks
+CashelOfTheKings::Application.load_tasks
