@@ -27,6 +27,6 @@ WebsocketRails::EventMap.describe do
   #   end
   # The above will handle an event triggered on the client like `product.new`.
   namespace :lobby do
-    subscribe :join, :to => LobbiesController, :with_method => :join
+    subscribe :join, :to => LobbiesSocketsController, :with_method => :join
   end
 end

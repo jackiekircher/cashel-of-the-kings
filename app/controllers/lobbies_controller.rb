@@ -13,6 +13,7 @@ class LobbiesController < ActionController::Base
   def show
     player = Player.new("player 1")
     @lobby = Lobby.new(player, :key => params[:id])
+    render :layout => "application"
   end
 
 end
