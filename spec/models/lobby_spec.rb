@@ -9,8 +9,6 @@ describe Lobby do
   describe "#add_player" do
 
     it "adds a player to the lobby" do
-      player = Object.new
-
       lobby.add_player(player)
       lobby.players.should include player
     end
@@ -19,10 +17,9 @@ describe Lobby do
   describe "#remove_player" do
 
     it "removes a player from the lobby" do
-      player = Object.new
       lobby.add_player(player)
-
       lobby.remove_player(player)
+
       lobby.players.should_not include player
     end
   end
@@ -42,6 +39,14 @@ describe Lobby do
       lobby = Lobby.new(player, :key => key)
 
       lobby.key.should == key
+    end
+  end
+
+  describe "#to_param" do
+
+    it "returns the key" do
+      lobby = Lobby.new(player)
+      lobby.to_param.should == lobby.key
     end
   end
 end

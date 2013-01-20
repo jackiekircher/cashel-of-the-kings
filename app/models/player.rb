@@ -1,7 +1,12 @@
 class Player
 
-  def initialize
+  def initialize(name)
+    @name = name
     @gold = 2
+  end
+
+  def name
+    @name
   end
 
   def gold

@@ -12,6 +12,10 @@ class Lobby
     @key
   end
 
+  def to_param
+    key
+  end
+
   def players
     @players
   end

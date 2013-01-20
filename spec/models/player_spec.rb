@@ -2,7 +2,14 @@ require 'models/player'
 
 describe Player do
 
-  let(:player) { Player.new }
+  let(:player) { Player.new("player 1") }
+
+  describe "#name" do
+
+    it "returns the player's name" do
+      player.name.should eq "player 1"
+    end
+  end
 
   describe "#hand" do
 

@@ -1,0 +1,11 @@
+%div#welcome
+  Welcome to lobby #{@lobby.key}!
+
+%br
+
+%div#players
+  Current players:
+  %ul
+    - @lobby.players.each do |player|
+      %li
+        #{player.name}
